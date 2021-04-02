@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Vinicius Conceicao
+	email = VINICIUS.CONCEICAO@CEPTIS.COM.BR
+# Please adapt and uncomment the following lines:
+#	name = vconceicao
+#	email = Vinicius.Conceicao@ceptis.com.br
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	a = add
+	undo-commit = revert
+	undo-changes-in-tracked-files = reset --hard
+	reset-tracked-files = reset --hard
+	cl-wc = clean -f
+	ac = '!add -A && git commit'
